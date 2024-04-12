@@ -9,6 +9,7 @@ import {
 } from "@mantine/core";
 import image from "@/assets/HuneyIcon.png";
 import classes from "./styles.module.css";
+import { raydium_path, totalSupply } from "@/utils/paths";
 
 export function HeroBullets() {
   return (
@@ -28,7 +29,12 @@ export function HeroBullets() {
             </Text>
 
             <Group mt={30}>
-              <Button radius="xl" size="md" className={classes.control}>
+              <Button
+                onClick={() => window.location.replace(raydium_path)}
+                radius="xl"
+                size="md"
+                className={classes.control}
+              >
                 BUY NOW
               </Button>
             </Group>
@@ -42,19 +48,22 @@ export function HeroBullets() {
         >
           <div className={classes.conts}>
             <Text>
-              0 TAX <br/>
+              0 TAX <br />
               BUY / SELL
             </Text>
           </div>
           <div className={classes.conts}>
-             <Text>
-              100% <br/>
+            <Text>
+              100% <br />
               LOCKED LIQUIDITY
             </Text>
           </div>
           <div className={classes.conts}>
             <Text>
-              1,000,000,000 <br/>
+              {Number(totalSupply).toLocaleString("en-US", {
+                maximumFractionDigits: 2,
+              })}{" "}
+              <br />
               TOTAL SUPPLY
             </Text>
           </div>
