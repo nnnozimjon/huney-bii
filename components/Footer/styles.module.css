@@ -1,0 +1,10 @@
+.container {
+    border-top: 2px solid #109B93;
+    padding: 10px;
+}
+
+.container p{ 
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: white;
+}

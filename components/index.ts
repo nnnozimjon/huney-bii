@@ -1,0 +1,7 @@
+export { HeroBullets } from './HeroBullets'
+export { AboutUS } from './AboutUs'
+export { OurStory } from './OurStory'
+export { Faq } from './Faq'
+export { JoinUs } from './join-us'
+export { Header } from './Header'
+export { Footer } from './Footer'
