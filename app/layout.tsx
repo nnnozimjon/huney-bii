@@ -6,8 +6,8 @@ import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { theme } from '../theme';
 
 export const metadata = {
-  title: 'Mantine Next.js template',
-  description: 'I am using Mantine with Next.js!',
+  title: 'Huney Bii Coin Solana',
+  description: 'Huney Bii ($HBII) is a new cryptocurrency that brings a fun twist to the world of digital money.',
 };
 
 export default function RootLayout({ children }: { children: any }) {
